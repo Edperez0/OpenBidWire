@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="OpenBidWire">
+  <rect width="64" height="64" rx="12" fill="#14243D"/>
+  <rect width="64" height="8" fill="#C2410C"/>
+  <path d="M22 18h13a9 9 0 0 1 4.6 16.7A10 10 0 0 1 36 54H22z M30 25v7h4.5a3.5 3.5 0 0 0 0-7z M30 39v8h5a4 4 0 0 0 0-8z" fill="#FFFFFF" fill-rule="evenodd"/>
+</svg>
