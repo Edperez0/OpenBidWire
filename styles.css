@@ -578,6 +578,20 @@ a:hover { color: var(--accent); }
   background: var(--navy);
   border-top: 3px solid var(--accent);
 }
+.js-sticky .sticky-cta {
+  transform: translateY(100%);
+  visibility: hidden;
+  transition: transform 0.2s ease, visibility 0s linear 0.2s;
+}
+.js-sticky .sticky-cta.visible {
+  transform: none;
+  visibility: visible;
+  transition: transform 0.2s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .js-sticky .sticky-cta,
+  .js-sticky .sticky-cta.visible { transition: none; }
+}
 .sticky-cta .btn {
   flex: 1;
   min-height: 48px;

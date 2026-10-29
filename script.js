@@ -3,6 +3,17 @@
   var year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
 
+  // Phone bar: hidden while the hero buttons are on screen, shown after.
+  // Without JavaScript the bar simply stays visible.
+  var hero = document.getElementById("top");
+  var bar = document.querySelector(".sticky-cta");
+  if (hero && bar && "IntersectionObserver" in window) {
+    document.documentElement.classList.add("js-sticky");
+    new IntersectionObserver(function (entries) {
+      bar.classList.toggle("visible", !entries[0].isIntersecting);
+    }).observe(hero);
+  }
+
   // Free sample form: send in the background and show a message in place.
   // Without JavaScript the form still posts normally to Formspree.
   var form = document.getElementById("sample-form");
